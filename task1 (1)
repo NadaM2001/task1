@@ -1,0 +1,613 @@
+
+
+    "# Q1 #\n",
+    "\n",
+    "def calculate(L,W):\n",
+    "    area=L*W\n",
+    "    return area\n",
+    "\n",
+    "L=int(input(\"Enter the length of the rectangle:\"))\n",
+    "W=int(input(\"Enter the width of the rectangle :\"))\n",
+    "area=calculate(L,W)\n",
+    "print(f\"The area of the rectangle is{area}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "02c65948-f740-4a81-b256-0292ec390fdd",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter an integer number: 4\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "4 is even.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Q2 #\n",
+    "\n",
+    "num=int(input(\"Enter an integer number:\"))\n",
+    "\n",
+    "if num % 2==0:\n",
+    "    print(f\"{num} is even.\")\n",
+    "else:\n",
+    "    print(f\"{num} is odd. \") "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "b6f2a0c4-3273-4e68-b587-7dc2a209efc9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a tree-digits number : 123\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The sum of digits is 6\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Q3 # \n",
+    "\n",
+    "num=int(input(\"Enter a tree-digits number :\"))\n",
+    "\n",
+    "D1=num//100\n",
+    "D2=(num // 10)%10\n",
+    "D3=num%10\n",
+    "\n",
+    "sum=D1+D2+D3\n",
+    "\n",
+    "print(f\"The sum of digits is {sum}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "c8c8bdb0-2942-4fd1-b7a3-fb1755d5fda8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "nada mohammmed\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Q4 #\n",
+    "\n",
+    "string1 = \"nada\"\n",
+    "string2 = \" mohammmed\"\n",
+    "\n",
+    "string3= string1+string2\n",
+    "\n",
+    "print(string3)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "b7902bef-1693-451a-8674-0ad75643e0e9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the first number : 4\n",
+      "Enter the second number : 5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The first number is smaller to the second number\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Q5 #\n",
+    "\n",
+    "num1=int(input(\"Enter the first number :\"))\n",
+    "num2=int(input(\"Enter the second number :\"))\n",
+    "\n",
+    "if num1>num2:\n",
+    "    print(\"The first number is greater to the second number\")\n",
+    "elif num1<num2:\n",
+    "    print(\"The first number is smaller to the second number\")\n",
+    "else:\n",
+    "    print(\"The first number is equal to the second number\")\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "ae96e0c4-cd28-4622-8f50-129d16609a59",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string to reverse : aplr\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Reversed string : rlpa\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Q6 #\n",
+    "\n",
+    "string=input(\"Enter a string to reverse :\")\n",
+    "\n",
+    "reverse=string[::-1]\n",
+    "\n",
+    "print(\"Reversed string :\",reverse)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "5457d1f0-f289-48c4-8de5-88f7cbca15d8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a number: 4\n"
+     ]
+    },
+    {
+     "ename": "TypeError",
+     "evalue": "'>' not supported between instances of 'str' and 'int'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[1;32mIn[13], line 5\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[38;5;66;03m# Q7 #\u001b[39;00m\n\u001b[0;32m      3\u001b[0m num\u001b[38;5;241m=\u001b[39m\u001b[38;5;28minput\u001b[39m(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mEnter a number:\u001b[39m\u001b[38;5;124m\"\u001b[39m)\n\u001b[1;32m----> 5\u001b[0m \u001b[38;5;28;01mif\u001b[39;00m num\u001b[38;5;241m>\u001b[39m\u001b[38;5;241m0\u001b[39m:\n\u001b[0;32m      6\u001b[0m     \u001b[38;5;28mprint\u001b[39m(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mPositive\u001b[39m\u001b[38;5;124m\"\u001b[39m)\n\u001b[0;32m      7\u001b[0m \u001b[38;5;28;01melif\u001b[39;00m num\u001b[38;5;241m<\u001b[39m\u001b[38;5;241m0\u001b[39m:\n",
+      "\u001b[1;31mTypeError\u001b[0m: '>' not supported between instances of 'str' and 'int'"
+     ]
+    }
+   ],
+   "source": [
+    "# Q7 #\n",
+    "\n",
+    "num=input(\"Enter a number:\")\n",
+    "\n",
+    "if num>0:\n",
+    "    print(\"Positive\")\n",
+    "elif num<0:\n",
+    "    print(\"Negative\")\n",
+    "else:\n",
+    "    print(\"Zero\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "97c159d3-3945-4056-acac-0ed18529a2ae",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter temperature in fahrenheit: 4\n"
+     ]
+    },
+    {
+     "ename": "TypeError",
+     "evalue": "unsupported operand type(s) for -: 'str' and 'int'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[1;32mIn[14], line 5\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[38;5;66;03m# Q8 #\u001b[39;00m\n\u001b[0;32m      3\u001b[0m F\u001b[38;5;241m=\u001b[39m\u001b[38;5;28minput\u001b[39m(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mEnter temperature in fahrenheit:\u001b[39m\u001b[38;5;124m\"\u001b[39m)\n\u001b[1;32m----> 5\u001b[0m C\u001b[38;5;241m=\u001b[39m(F\u001b[38;5;241m-\u001b[39m\u001b[38;5;241m32\u001b[39m)\u001b[38;5;241m*\u001b[39m\u001b[38;5;241m5\u001b[39m\u001b[38;5;241m/\u001b[39m\u001b[38;5;241m9\u001b[39m\n\u001b[0;32m      7\u001b[0m \u001b[38;5;28mprint\u001b[39m(\u001b[38;5;124mf\u001b[39m\u001b[38;5;124m\"\u001b[39m\u001b[38;5;132;01m{\u001b[39;00mF\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124mdegrees fahrenheit is equal to \u001b[39m\u001b[38;5;132;01m{\u001b[39;00mC\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124m degree celsius\u001b[39m\u001b[38;5;124m\"\u001b[39m)\n",
+      "\u001b[1;31mTypeError\u001b[0m: unsupported operand type(s) for -: 'str' and 'int'"
+     ]
+    }
+   ],
+   "source": [
+    "# Q8 #\n",
+    "\n",
+    "F=input(\"Enter temperature in fahrenheit:\")\n",
+    "\n",
+    "C=(F-32)*5/9\n",
+    "\n",
+    "print(f\"{F}degrees fahrenheit is equal to {C} degree celsius\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "522c2291-05af-422d-972a-b53a9f27c487",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string : nadA\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The number of characters in string is 4\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Q9 #\n",
+    "\n",
+    "string=input(\"Enter a string :\")\n",
+    "\n",
+    "count=len(string)\n",
+    "\n",
+    "print(f\"The number of characters in string is {count}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "7d0d0881-b777-400a-9e42-f4f67af527b4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the first number: 4\n",
+      "Enter the second number: 5\n",
+      "Enter the third number: 6\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The max of the three num is :6\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Q10 #\n",
+    "\n",
+    "def find_maximum(n1,n2,n3):\n",
+    "    if n1>=n2 and n1>=n3:\n",
+    "        return n1\n",
+    "    elif n2>=n1 and n2>=n3:\n",
+    "        return n2\n",
+    "    else :\n",
+    "        return n3\n",
+    "\n",
+    "n1=input(\"Enter the first number:\")\n",
+    "n2=input(\"Enter the second number:\")\n",
+    "n3=input(\"Enter the third number:\")\n",
+    "\n",
+    "max=find_maximum(n1,n2,n3)\n",
+    "\n",
+    "print(f\"The max of the three num is :{max}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "b3417fb4-9e79-4aa7-b25e-15de15351962",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The concatenated list is: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Q11 #\n",
+    "\n",
+    "List1=[1,2,3,4,5]\n",
+    "List2=[6,7,8,9,10]\n",
+    "\n",
+    "List3= List1+List2\n",
+    "\n",
+    "print(\"The concatenated list is:\",List3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4b10f028-0c64-40d1-9b1e-dadda17dbd78",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Q12 #\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "17c36e58-a4d4-43e6-bdff-d93d3c70dba7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the first number: 1\n",
+      "Enter the second number: 1\n",
+      "Enter the third number: 2\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "the average of the numbers is 1.3333333333333333\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Q13 #\n",
+    "\n",
+    "N1=int(input(\"Enter the first number:\"))\n",
+    "N2=int(input(\"Enter the second number:\"))\n",
+    "N3=int(input(\"Enter the third number:\"))\n",
+    "\n",
+    "average=(N1+N2+N3)/3\n",
+    "\n",
+    "print(f\"the average of the numbers is {average}\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "d7a66aea-23ca-4e1f-96bc-93b7a1cac00d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the first number: 4\n",
+      "Enter the second number: 2\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "4 Is divisible by 2\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Q14 #\n",
+    "\n",
+    "N1=int(input(\"Enter the first number:\"))\n",
+    "N2=int(input(\"Enter the second number:\"))\n",
+    "\n",
+    "if N2==0:\n",
+    "    print(\"Division by zero is not allowed\")\n",
+    "else:\n",
+    "    if N1%N2 == 0:\n",
+    "        print(f\"{N1} Is divisible by {N2}\")\n",
+    "    else:\n",
+    "        print(f\"{N1} Is not divisible by{N2}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "7058864f-9faa-44ad-962d-2b535bbf8feb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the first number : 4\n",
+      "Enter the second number : 5\n",
+      "Enter an operator +,-,*,/ : +\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The result is 9\n"
+     ]
+    }
+   ],
+   "source": [
+    "#  Q15 #\n",
+    "\n",
+    "n1=int(input(\"Enter the first number :\"))\n",
+    "n2=int(input(\"Enter the second number :\"))\n",
+    "\n",
+    "operator=input(\"Enter an operator +,-,*,/ :\")\n",
+    "\n",
+    "if operator == '+':\n",
+    "    result=n1+n2\n",
+    "    print(f\"The result is {result}\")\n",
+    "elif operator == '-':\n",
+    "    result=n1-n2\n",
+    "    print(f\"The result is {result}\")\n",
+    "elif operator == '*':\n",
+    "    result=n1*n2\n",
+    "    print(f\"The result is {result}\")\n",
+    "elif operator =='/':\n",
+    "    if n2!=0:\n",
+    "        result=n1/n2\n",
+    "        print(f\"The result is {result}\")\n",
+    "    else:\n",
+    "        print(\"division by zero is not allowed\")\n",
+    "else:\n",
+    "    print(\"invalid operator\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "bf2961db-d5cb-496d-9b2c-ea1a618177ec",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the first num 5\n",
+      "Enter the second num  4\n",
+      "Enter the third num 1\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The minimum number is :1\n"
+     ]
+    }
+   ],
+   "source": [
+    "#  Q16 #\n",
+    "\n",
+    "N1=input(\"Enter the first num\")\n",
+    "N2=input(\"Enter the second num \")\n",
+    "N3=input(\"Enter the third num\")\n",
+    "\n",
+    "minimum=min(N1,N2,N3)\n",
+    "\n",
+    "print(f\"The minimum number is :{minimum}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "8c5725ae-54ae-40a0-8d95-7a61efc458fa",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string : nada\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The length of the string is :4\n"
+     ]
+    }
+   ],
+   "source": [
+    " # Q17 #\n",
+    "\n",
+    "String=input(\"Enter a string :\")\n",
+    "\n",
+    "length=len(String)\n",
+    "\n",
+    "print(f\"The length of the string is :{length}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "id": "de208adf-5e5d-4c08-8b73-5205115462cd",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "'int' object is not callable",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[1;32mIn[38], line 4\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[38;5;66;03m# Q18 #\u001b[39;00m\n\u001b[0;32m      2\u001b[0m numbers\u001b[38;5;241m=\u001b[39m[\u001b[38;5;241m1\u001b[39m,\u001b[38;5;241m2\u001b[39m,\u001b[38;5;241m3\u001b[39m,\u001b[38;5;241m4\u001b[39m,\u001b[38;5;241m5\u001b[39m,\u001b[38;5;241m6\u001b[39m,\u001b[38;5;241m7\u001b[39m]\n\u001b[1;32m----> 4\u001b[0m Sum\u001b[38;5;241m=\u001b[39m\u001b[38;5;28msum\u001b[39m(numbers)\n\u001b[0;32m      5\u001b[0m \u001b[38;5;28mprint\u001b[39m(Sum)\n",
+      "\u001b[1;31mTypeError\u001b[0m: 'int' object is not callable"
+     ]
+    }
+   ],
+   "source": [
+    "# Q18 #\n",
+    "numbers=[1,2,3,4,5,6,7]\n",
+    "\n",
+    "Sum=sum(numbers)\n",
+    "print(Sum)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "18bc3519-7218-45bd-86f3-fba909fd8890",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#  Q19  #\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "08d8d1d2-1f38-43a3-9437-3790e6e80863",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
